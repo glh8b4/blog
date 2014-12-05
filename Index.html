@@ -42,8 +42,30 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#/">Home</a></li>
-          <li><a href="#/projects">Projects</a></li>
-          <li><a href="#/patterns">Patterns</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#/projects">Projects<span class="caret"></span></a>
+
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#/IM">Instant Messenger</a></li>
+              <li><a href="#/ChessAI">Chess AI</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" role="button" aria-expanded="false" href="#/patterns">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#/MVP">Model View Presenter</a></li>
+              <li><a href="#/Singleton">Singleton</a></li>
+              <li><a href="#/Builder">Builder</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" role="button" aria-expanded="false" href="#/bestpractices">Best Practices<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#/officelife">Office Life</a><li>
+              <li><a href="#/OO">Object Oriented Languages</a></li>
+              <li><a href="#/webdev">Web Development</a></li>
+            </ul>
+          </li>
           <li><a href="#/about">About</a></li>
           <li><a href="#/contact">Contact</a></li>
         </ul>
@@ -51,18 +73,21 @@
     </div>
   </nav>
 
-    <div ng-controller="mainController">
-        <h1>{{message}}</h1>
-        <div ng-view>
-        </div>
+  <div ng-controller="mainController">
+    <div ng-view>
     </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 </body>
+
+<footer>
+  <div ng-controller="mainController">
+    <h1>{{footer}}</h1>
+  </div>
+</footer>
 </html>

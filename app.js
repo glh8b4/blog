@@ -18,6 +18,10 @@
 				templateUrl: 'views/patterns.html',
 				controller: 'patternsController'
 			})
+			.when('/practices', {
+				templateUrl: 'views/practices.html',
+				controller: 'practicesController'
+			})
 		  .when('/about', {
 			  templateUrl: 'views/about.html',
 			  controller: 'aboutController'
@@ -31,6 +35,6 @@
 		  });
 	}])
 	.controller('mainController', function ($scope) {
-		$scope.message = "Main Content";
+		$scope.footer = "Footer";
 	});
 }());

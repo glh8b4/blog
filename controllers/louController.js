@@ -1,6 +1,7 @@
 (function() {
   var app = angular.module('myApp');
   app.controller('louController', function ($scope) {
-    $scope.message = "Lou Page!";
+    $scope.header = "Lou Harmon";
+    $scope.description = "Here you can find out more about me";
   });
 }());
