@@ -1,6 +1,6 @@
 ﻿(function() {
-	var app = angular.module('myApp', []);
+	var app = angular.module('myApp');
 	app.controller('homeController', function ($scope) {
-		$scope.message = "Now viewing home!";
+		$scope.message = "Home Page";
 	});
 }());
