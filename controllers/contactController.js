@@ -1,7 +1,9 @@
 (function() {
-  var app = angular.module('myApp');
-  app.controller('contactController', function ($scope) {
-    $scope.header = "Contact";
-    $scope.description = "Find out how to contact me:";
+    angular
+        .module('myApp')
+        .controller('contactController', function () {
+            var vm = this;
+            vm.header = "Contact";
+            vm.description = "Find out how to contact me:";
   });
 }());

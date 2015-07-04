@@ -1,6 +1,9 @@
 ﻿(function() {
-	var app = angular.module('myApp');
-	app.controller('homeController', function ($scope) {
-		$scope.message = "Home Page";
+    angular
+        .module('myApp')
+        .controller('homeController', function () {
+            var vm = this;
+            vm.message = "Home Page";
+            vm.content = "Welcome to my blog!";
 	});
 }());

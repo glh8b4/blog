@@ -25,64 +25,65 @@
     <script src="controllers/patternsController.js"></script>
     <script src="controllers/contactController.js"></script>
     <script src="controllers/louController.js"></script>
+    <script src="directives/navCollapse.js"></script>
 </head>
 <body>
-
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#/lou">Lou Harmon</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#/">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#/projects">Projects<span class="caret"></span></a>
-
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#/IM">Instant Messenger</a></li>
-              <li><a href="#/ChessAI">Chess AI</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a data-toggle="dropdown" role="button" aria-expanded="false" href="#/patterns">Patterns<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#/MVP">Model View Presenter</a></li>
-              <li><a href="#/Singleton">Singleton</a></li>
-              <li><a href="#/Builder">Builder</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a data-toggle="dropdown" role="button" aria-expanded="false" href="#/bestpractices">Best Practices<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#/officelife">Office Life</a><li>
-              <li><a href="#/OO">Object Oriented Languages</a></li>
-              <li><a href="#/webdev">Web Development</a></li>
-            </ul>
-          </li>
-          <li><a href="#/about">About</a></li>
-          <li><a href="#/contact">Contact</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+    <div class="collapse navbar-collapse navbar-app-collapse" nav-collapse="">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/lou">Lou Harmon</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/">Home</a></li>
+                        <!--<li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#/projects">Projects<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#/IM">Instant Messenger</a></li>
+                            <li><a href="#/ChessAI">Chess AI</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a data-toggle="dropdown" role="button" aria-expanded="false" href="#/patterns">Patterns<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#/MVP">Model View Presenter</a></li>
+                            <li><a href="#/Singleton">Singleton</a></li>
+                            <li><a href="#/Builder">Builder</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a data-toggle="dropdown" role="button" aria-expanded="false" href="#/bestpractices">Best Practices<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#/officelife">Office Life</a><li>
+                            <li><a href="#/OO">Object Oriented Languages</a></li>
+                            <li><a href="#/webdev">Web Development</a></li>
+                          </ul>
+                        </li>-->
+                        <li><a href="#/about">About</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
     </div>
-  </nav>
 
-  <div ng-controller="mainController">
-    <div ng-view>
-    </div>
-  </div>
+        <div ng-controller="mainController">
+            <div ng-view>
+            </div>
+        </div>
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
 </body>
 
 <footer>

@@ -34,7 +34,8 @@
 			  redirectTo: '/'
 		  });
 	}])
-	.controller('mainController', function ($scope) {
-		$scope.footer = "Footer";
+	.controller('mainController', function () {
+	    var vm = this;
+		vm.footer = "Footer";
 	});
 }());
